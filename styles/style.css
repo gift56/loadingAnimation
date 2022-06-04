@@ -39,17 +39,31 @@ body .loader .circle {
 }
 
 body .loader .circle .point {
+  background-color: #0007;
   width: 3px;
   height: 15px;
   border-radius: 3px;
   position: absolute;
-  -webkit-transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
-          transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
-  background-color: #0007;
+  -webkit-transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
+          transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
   -webkit-animation: glow 0.8s linear infinite;
           animation: glow 0.8s linear infinite;
   -webkit-animation-delay: calc(var(--i) * 0.008s);
           animation-delay: calc(var(--i) * 0.008s);
+}
+
+body .loader span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: 700;
+  color: #58a2ff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #58a2ff;
+  letter-spacing: 2px;
 }
 
 @-webkit-keyframes glow {
@@ -76,19 +90,5 @@ body .loader .circle .point {
     -webkit-box-shadow: 0 0 10px #58a2ff;
             box-shadow: 0 0 10px #58a2ff;
   }
-}
-
-body .loader span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 28px;
-  font-weight: 700;
-  color: #58a2ff;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px #58a2ff;
-  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */
