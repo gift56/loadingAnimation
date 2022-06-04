@@ -51,4 +51,12 @@ body .loader span {
   text-transform: uppercase;
   text-shadow: 0 0 10px #58a2ff;
 }
+
+body .loader .point {
+  width: 3px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #0007;
+  position: absolute;
+}
 /*# sourceMappingURL=style.css.map */
