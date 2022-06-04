@@ -12,6 +12,7 @@ body {
     background: #333;
 
     .loader {
+        position: relative;
         .circle {
             display: flex;
             align-items: center;
@@ -19,6 +20,9 @@ body {
             width: 200px;
             height: 200px;
             border: 2px solid #fff;
+        }
+        span {
+            position: absolute;
         }
     }
 }

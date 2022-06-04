@@ -20,6 +20,10 @@ body {
   background: #333;
 }
 
+body .loader {
+  position: relative;
+}
+
 body .loader .circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,5 +37,9 @@ body .loader .circle {
   width: 200px;
   height: 200px;
   border: 2px solid #fff;
+}
+
+body .loader span {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
