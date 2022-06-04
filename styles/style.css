@@ -36,7 +36,46 @@ body .loader .circle {
           justify-content: center;
   width: 200px;
   height: 200px;
-  border: 2px solid #fff;
+}
+
+body .loader .circle .point {
+  width: 3px;
+  height: 15px;
+  border-radius: 3px;
+  position: absolute;
+  -webkit-transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
+          transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
+  background-color: #0007;
+  -webkit-animation: glow 0.8s linear infinite;
+          animation: glow 0.8s linear infinite;
+  -webkit-animation-delay: calc(var(--i) * 0.008s);
+          animation-delay: calc(var(--i) * 0.008s);
+}
+
+@-webkit-keyframes glow {
+  0%,
+  100% {
+    background-color: #0007;
+    border: none;
+  }
+  50% {
+    background-color: #58a2ff;
+    -webkit-box-shadow: 0 0 10px #58a2ff;
+            box-shadow: 0 0 10px #58a2ff;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    background-color: #0007;
+    border: none;
+  }
+  50% {
+    background-color: #58a2ff;
+    -webkit-box-shadow: 0 0 10px #58a2ff;
+            box-shadow: 0 0 10px #58a2ff;
+  }
 }
 
 body .loader span {
@@ -50,13 +89,6 @@ body .loader span {
   color: #58a2ff;
   text-transform: uppercase;
   text-shadow: 0 0 10px #58a2ff;
-}
-
-body .loader .point {
-  width: 3px;
-  height: 15px;
-  border-radius: 3px;
-  background-color: #0007;
-  position: absolute;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=style.css.map */
