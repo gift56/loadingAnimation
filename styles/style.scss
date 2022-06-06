@@ -49,14 +49,12 @@ body {
     100% {
         background-color: #0007;
         border: none;
-        transform: rotate(0deg);
+        // transform: rotate(0deg);
     }
     50% {
         background-color: #58a2ff;
         box-shadow: 0 0 10px #58a2ff;
-        transform: rotate(360deg);
+        // transform: rotate(360deg);
     }
-    75% {
-        transform: rotate(0deg);
-    }
+  
 }
