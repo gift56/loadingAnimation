@@ -44,8 +44,8 @@ body .loader .circle .point {
   height: 15px;
   border-radius: 3px;
   position: absolute;
-  -webkit-transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
-          transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
+  -webkit-transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
+          transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
   -webkit-animation: glow 0.8s linear infinite;
           animation: glow 0.8s linear infinite;
   -webkit-animation-delay: calc(var(--i) * 0.008s);
@@ -71,11 +71,19 @@ body .loader span {
   100% {
     background-color: #0007;
     border: none;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   50% {
     background-color: #58a2ff;
     -webkit-box-shadow: 0 0 10px #58a2ff;
             box-shadow: 0 0 10px #58a2ff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -84,11 +92,19 @@ body .loader span {
   100% {
     background-color: #0007;
     border: none;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   50% {
     background-color: #58a2ff;
     -webkit-box-shadow: 0 0 10px #58a2ff;
             box-shadow: 0 0 10px #58a2ff;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

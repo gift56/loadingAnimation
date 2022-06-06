@@ -25,7 +25,7 @@ body {
                 height: 15px;
                 border-radius: 3px;
                 position: absolute;
-                transform: rotate(calc(var(--i) * var(--rot))) translateY(-100px);
+                transform: rotate(calc(var(--i) * 120deg)) translateY(-100px);
                 animation: glow 0.8s linear infinite;
                 animation-delay: calc(var(--i) * 0.008s);
             }
@@ -49,9 +49,14 @@ body {
     100% {
         background-color: #0007;
         border: none;
+        transform: rotate(0deg);
     }
     50% {
         background-color: #58a2ff;
         box-shadow: 0 0 10px #58a2ff;
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(0deg);
     }
 }
