@@ -49,6 +49,8 @@ section .loader span::before {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
           box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
 }
 
 @-webkit-keyframes animateBg {
@@ -70,6 +72,30 @@ section .loader span::before {
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
