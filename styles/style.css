@@ -5,4 +5,29 @@
           box-sizing: border-box;
   font-family: sans-serif;
 }
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #042104;
+}
+
+section .loader {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+section .loader span {
+  position: absolute;
+  top: 0;
+}
 /*# sourceMappingURL=style.css.map */
