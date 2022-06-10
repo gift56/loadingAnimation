@@ -10,6 +10,7 @@ section {
     align-items: center;
     min-height: 100vh;
     background-color: #042104;
+    animation: animateBg 10s linear infinite;
     .loader {
         position: relative;
         width: 120px;
@@ -34,5 +35,13 @@ section {
                     0 0 100px #00ff0a;
             }
         }
+    }
+}
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg); 
     }
 }

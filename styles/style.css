@@ -18,6 +18,8 @@ section {
           align-items: center;
   min-height: 100vh;
   background-color: #042104;
+  -webkit-animation: animateBg 10s linear infinite;
+          animation: animateBg 10s linear infinite;
 }
 
 section .loader {
@@ -47,5 +49,27 @@ section .loader span::before {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
           box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+}
+
+@-webkit-keyframes animateBg {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animateBg {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
