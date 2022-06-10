@@ -42,7 +42,7 @@ section .loader span::before {
   width: 15px;
   height: 15px;
   background-color: #00ff0a;
-  -webkit-box-shadow: 0 0 10px #00ff0a;
-          box-shadow: 0 0 10px #00ff0a;
+  -webkit-box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+          box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a, 0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
 }
 /*# sourceMappingURL=style.css.map */
